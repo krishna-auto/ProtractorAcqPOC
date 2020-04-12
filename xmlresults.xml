@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="9" time="68.503">
+ <testsuite name="EndToEndTest" timestamp="2020-04-08T14:10:36" hostname="localhost" time="68.503" errors="0" tests="9" skipped="1" disabled="0" failures="0">
+  <testcase classname="EndToEndTest" name="LaunchBrowser" time="15.244" />
+  <testcase classname="EndToEndTest" name="EnterCredentials" time="36.307" />
+  <testcase classname="EndToEndTest" name="VerifyPipeline" time="0.044" />
+  <testcase classname="EndToEndTest" name="AddDeal" time="2.179" />
+  <testcase classname="EndToEndTest" name="UploadImage" time="4.482" />
+  <testcase classname="EndToEndTest" name="SelectValueFromDropdown" time="1.457" />
+  <testcase classname="EndToEndTest" name="CreateTask" time="0.001">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="EndToEndTest" name="SelectUserGuide" time="4.898" />
+  <testcase classname="EndToEndTest" name="LogoutFromApp" time="3.887" />
+ </testsuite>
+</testsuites>
