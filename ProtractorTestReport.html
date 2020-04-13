@@ -189,10 +189,10 @@ th {
         <div class="navbar-header">
           <div class="project-name visible-md visible-lg">Protractor Test Execution Report</div>
           <div class="label-container">
-            <span class="label label-success" title=TestCases>Passed: 8</span>
-            
+            <span class="label label-success" title=TestCases>Passed: 0</span>
+            <span class="label label-danger" title=TestCases>Failed: 8</span> 
 			<span class="label label-warning" title=TestCases>Skipped: 1</span> 
-            <span class="label label-info">Time Elapsed: 0h 1min 9s</span>
+            <span class="label label-info">Time Elapsed: 0h 0min 2s</span>
           </div>
         </div>
       </div>
@@ -200,11 +200,11 @@ th {
 
     <div class="container">
 	
-    <div class="generated-on">4/8/2020, 2:11:44 PM</div>
+    <div class="generated-on">4/13/2020, 5:30:27 PM</div>
 	
     <!--<div class="generated-on"><b>Platform:</b> Windows</div>
-    <div class="info"><b>Browser:</b> chrome 80.0.3987.163</div>
-    <div class="info"><b>Generated on:</b> 4/8/2020, 2:11:44 PM</div>-->
+    <div class="info"><b>Browser:</b> chrome 81.0.4044.92</div>
+    <div class="info"><b>Generated on:</b> 4/13/2020, 5:30:27 PM</div>-->
 
 
       <div class="row">
@@ -227,7 +227,7 @@ th {
             <div class="row">
               <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <div class="pull-left">
-                    <strong> Browser: </strong>chrome 80.0.3987.163
+                    <strong> Browser: </strong>chrome 81.0.4044.92
                   </div>
                   <div class="pull-right">
                     <strong> Platform: </strong>Windows
@@ -246,12 +246,13 @@ th {
       <h4 class="panel-title">
           <a data-toggle="collapse" href="#collapseSuite0">
           
-            <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
           
-          <font color="green"><b>TestSuite:</b>EndToEndTest</font>
+          <font color="red"><b>TestSuite:</b>EndToEndTest</font>
+          
           <span class="label-container">
-            <span class="label label-success">8</span>
             
+            <span class="label label-danger">8</span>
             <span class="label label-warning">1</span>
             
           </span>
@@ -266,16 +267,16 @@ th {
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_0">
                         
-                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
                         
 
-                        <font color="green"><b>TestCase:</b>LaunchBrowser</font>
                         
                         
+                        <font color="red"><b>TestCase:</b>LaunchBrowser</font>
                         <span class="label-container">
-                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
+                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -285,11 +286,25 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 16 seconds</font>
+                          <font color="black">Time elapsed: 2 seconds</font>
 
+                          
+                            <br />
+                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                            <font color="red">Failed: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
+                            <br />
+                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
+                              Screenshot on failure:
+                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest LaunchBrowser.png" data-lightbox="chrome-EndToEndTest LaunchBrowser.png">
+                              <img src="./screenshots/chrome-EndToEndTest LaunchBrowser.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest LaunchBrowser.png"/>
+                            </a>
+                        
                       
                       </p>
                     </div>
@@ -302,16 +317,16 @@ th {
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_1">
                         
-                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
                         
 
-                        <font color="green"><b>TestCase:</b>EnterCredentials</font>
                         
                         
+                        <font color="red"><b>TestCase:</b>EnterCredentials</font>
                         <span class="label-container">
-                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
+                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -321,11 +336,25 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 37 seconds</font>
+                          <font color="black">Time elapsed: 1 seconds</font>
 
+                          
+                            <br />
+                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                            <font color="red">NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
+                            <br />
+                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
+                              Screenshot on failure:
+                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest EnterCredentials.png" data-lightbox="chrome-EndToEndTest EnterCredentials.png">
+                              <img src="./screenshots/chrome-EndToEndTest EnterCredentials.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest EnterCredentials.png"/>
+                            </a>
+                        
                       
                       </p>
                     </div>
@@ -338,16 +367,16 @@ th {
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_2">
                         
-                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
                         
 
-                        <font color="green"><b>TestCase:</b>VerifyPipeline</font>
                         
                         
+                        <font color="red"><b>TestCase:</b>VerifyPipeline</font>
                         <span class="label-container">
-                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
+                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -360,8 +389,22 @@ th {
                           <font color="black">Time elapsed: 1 seconds</font>
 
                           
+                            <br />
+                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                            <font color="red">NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
+                          
 
                           
+                            <br />
+                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
+                              Screenshot on failure:
+                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest VerifyPipeline.png" data-lightbox="chrome-EndToEndTest VerifyPipeline.png">
+                              <img src="./screenshots/chrome-EndToEndTest VerifyPipeline.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest VerifyPipeline.png"/>
+                            </a>
+                        
                       
                       </p>
                     </div>
@@ -374,16 +417,16 @@ th {
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_3">
                         
-                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
                         
 
-                        <font color="green"><b>TestCase:</b>AddDeal</font>
                         
                         
+                        <font color="red"><b>TestCase:</b>AddDeal</font>
                         <span class="label-container">
-                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
+                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -393,11 +436,25 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 3 seconds</font>
+                          <font color="black">Time elapsed: 1 seconds</font>
 
+                          
+                            <br />
+                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                            <font color="red">NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
+                            <br />
+                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
+                              Screenshot on failure:
+                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest AddDeal.png" data-lightbox="chrome-EndToEndTest AddDeal.png">
+                              <img src="./screenshots/chrome-EndToEndTest AddDeal.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest AddDeal.png"/>
+                            </a>
+                        
                       
                       </p>
                     </div>
@@ -410,16 +467,16 @@ th {
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_4">
                         
-                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
                         
 
-                        <font color="green"><b>TestCase:</b>UploadImage</font>
                         
                         
+                        <font color="red"><b>TestCase:</b>UploadImage</font>
                         <span class="label-container">
-                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
+                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -429,11 +486,25 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 5 seconds</font>
+                          <font color="black">Time elapsed: 1 seconds</font>
 
+                          
+                            <br />
+                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                            <font color="red">NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
+                            <br />
+                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
+                              Screenshot on failure:
+                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest UploadImage.png" data-lightbox="chrome-EndToEndTest UploadImage.png">
+                              <img src="./screenshots/chrome-EndToEndTest UploadImage.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest UploadImage.png"/>
+                            </a>
+                        
                       
                       </p>
                     </div>
@@ -446,16 +517,16 @@ th {
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_5">
                         
-                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
                         
 
-                        <font color="green"><b>TestCase:</b>SelectValueFromDropdown</font>
                         
                         
+                        <font color="red"><b>TestCase:</b>SelectValueFromDropdown</font>
                         <span class="label-container">
-                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
+                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -465,11 +536,25 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 2 seconds</font>
+                          <font color="black">Time elapsed: 1 seconds</font>
 
+                          
+                            <br />
+                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                            <font color="red">NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
+                            <br />
+                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
+                              Screenshot on failure:
+                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest SelectValueFromDropdown.png" data-lightbox="chrome-EndToEndTest SelectValueFromDropdown.png">
+                              <img src="./screenshots/chrome-EndToEndTest SelectValueFromDropdown.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest SelectValueFromDropdown.png"/>
+                            </a>
+                        
                       
                       </p>
                     </div>
@@ -511,16 +596,16 @@ th {
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_7">
                         
-                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
                         
 
-                        <font color="green"><b>TestCase:</b>SelectUserGuide</font>
                         
                         
+                        <font color="red"><b>TestCase:</b>SelectUserGuide</font>
                         <span class="label-container">
-                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
+                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -530,11 +615,25 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 5 seconds</font>
+                          <font color="black">Time elapsed: 1 seconds</font>
 
+                          
+                            <br />
+                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                            <font color="red">NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
+                            <br />
+                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
+                              Screenshot on failure:
+                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest SelectUserGuide.png" data-lightbox="chrome-EndToEndTest SelectUserGuide.png">
+                              <img src="./screenshots/chrome-EndToEndTest SelectUserGuide.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest SelectUserGuide.png"/>
+                            </a>
+                        
                       
                       </p>
                     </div>
@@ -547,16 +646,16 @@ th {
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_8">
                         
-                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
                         
 
-                        <font color="green"><b>TestCase:</b>LogoutFromApp</font>
                         
                         
+                        <font color="red"><b>TestCase:</b>LogoutFromApp</font>
                         <span class="label-container">
-                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
+                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -566,11 +665,25 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 4 seconds</font>
+                          <font color="black">Time elapsed: 1 seconds</font>
 
+                          
+                            <br />
+                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                            <font color="red">NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
+                            <br />
+                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
+                              Screenshot on failure:
+                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest LogoutFromApp.png" data-lightbox="chrome-EndToEndTest LogoutFromApp.png">
+                              <img src="./screenshots/chrome-EndToEndTest LogoutFromApp.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest LogoutFromApp.png"/>
+                            </a>
+                        
                       
                       </p>
                     </div>
@@ -612,16 +725,16 @@ th {
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(function() {drawChart({
                                                               "title": "TestSuites",
-                                                              "passed": 1,
-                                                              "failed": 0,
+                                                              "passed": 0,
+                                                              "failed": 1,
         })
       });
       google.charts.setOnLoadCallback(function() {drawChart({
                                                               "title": "TestCases",
-                                                              "passed": 8,
+                                                              "passed": 0,
                                                               "skipped": 1,
                                                               "errors": 0,
-                                                              "failed": 0
+                                                              "failed": 8
         })
       });
 

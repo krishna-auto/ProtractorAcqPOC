@@ -1,16 +1,230 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="9" time="68.503">
- <testsuite name="EndToEndTest" timestamp="2020-04-08T14:10:36" hostname="localhost" time="68.503" errors="0" tests="9" skipped="1" disabled="0" failures="0">
-  <testcase classname="EndToEndTest" name="LaunchBrowser" time="15.244" />
-  <testcase classname="EndToEndTest" name="EnterCredentials" time="36.307" />
-  <testcase classname="EndToEndTest" name="VerifyPipeline" time="0.044" />
-  <testcase classname="EndToEndTest" name="AddDeal" time="2.179" />
-  <testcase classname="EndToEndTest" name="UploadImage" time="4.482" />
-  <testcase classname="EndToEndTest" name="SelectValueFromDropdown" time="1.457" />
-  <testcase classname="EndToEndTest" name="CreateTask" time="0.001">
+<testsuites disabled="0" errors="0" failures="8" tests="9" time="1.519">
+ <testsuite name="EndToEndTest" timestamp="2020-04-13T17:30:25" hostname="localhost" time="1.519" errors="0" tests="9" skipped="1" disabled="0" failures="8">
+  <testcase classname="EndToEndTest" name="LaunchBrowser" time="1.453">
+   <failure type="exception" message="Failed: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
+    at Object.checkLegacyResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.manage().window().maximize()
+    at Driver.schedule (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at Window.maximize (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:1686:25)
+    at loginpage.launchbrowser (D:\ProtractorV2\AcquireSolution\pages\Login.js:12:42)
+    at UserContext.<anonymous> (D:\ProtractorV2\AcquireSolution\EndToEndTestspec.js:9:19)
+    at D:\ProtractorV2\AcquireSolution\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (D:\ProtractorV2\AcquireSolution\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+From: Task: Run it("LaunchBrowser") in control flow
+    at UserContext.<anonymous> (D:\ProtractorV2\AcquireSolution\node_modules\jasminewd2\index.js:94:19)
+    at attempt (D:\ProtractorV2\AcquireSolution\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (D:\ProtractorV2\AcquireSolution\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (D:\ProtractorV2\AcquireSolution\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (D:\ProtractorV2\AcquireSolution\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (D:\ProtractorV2\AcquireSolution\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (D:\ProtractorV2\AcquireSolution\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (D:\ProtractorV2\AcquireSolution\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (D:\ProtractorV2\AcquireSolution\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (D:\ProtractorV2\AcquireSolution\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:\ProtractorV2\AcquireSolution\EndToEndTestspec.js:8:5)
+    at addSpecsToSuite (D:\ProtractorV2\AcquireSolution\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (D:\ProtractorV2\AcquireSolution\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (D:\ProtractorV2\AcquireSolution\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:\ProtractorV2\AcquireSolution\EndToEndTestspec.js:2:1)
+    at Module._compile (internal/modules/cjs/loader.js:1157:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)
+    at Module.load (internal/modules/cjs/loader.js:1001:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:900:14)]]>
+   </failure>
+  </testcase>
+  <testcase classname="EndToEndTest" name="EnterCredentials" time="0.012">
+   <failure type="exception" message="NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
+    at Object.checkLegacyResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.takeScreenshot()
+    at Driver.schedule (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at Driver.takeScreenshot (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
+    at run (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:59:33)
+    at ProtractorBrowser.to.<computed> [as takeScreenshot] (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:67:16)
+    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
+    at ManagedPromise.invokeCallback_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+  </testcase>
+  <testcase classname="EndToEndTest" name="VerifyPipeline" time="0.008">
+   <failure type="exception" message="NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
+    at Object.checkLegacyResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.takeScreenshot()
+    at Driver.schedule (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at Driver.takeScreenshot (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
+    at run (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:59:33)
+    at ProtractorBrowser.to.<computed> [as takeScreenshot] (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:67:16)
+    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
+    at ManagedPromise.invokeCallback_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+  </testcase>
+  <testcase classname="EndToEndTest" name="AddDeal" time="0.008">
+   <failure type="exception" message="NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
+    at Object.checkLegacyResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.takeScreenshot()
+    at Driver.schedule (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at Driver.takeScreenshot (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
+    at run (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:59:33)
+    at ProtractorBrowser.to.<computed> [as takeScreenshot] (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:67:16)
+    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
+    at ManagedPromise.invokeCallback_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+  </testcase>
+  <testcase classname="EndToEndTest" name="UploadImage" time="0.007">
+   <failure type="exception" message="NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
+    at Object.checkLegacyResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.takeScreenshot()
+    at Driver.schedule (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at Driver.takeScreenshot (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
+    at run (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:59:33)
+    at ProtractorBrowser.to.<computed> [as takeScreenshot] (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:67:16)
+    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
+    at ManagedPromise.invokeCallback_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+  </testcase>
+  <testcase classname="EndToEndTest" name="SelectValueFromDropdown" time="0.006">
+   <failure type="exception" message="NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
+    at Object.checkLegacyResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.takeScreenshot()
+    at Driver.schedule (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at Driver.takeScreenshot (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
+    at run (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:59:33)
+    at ProtractorBrowser.to.<computed> [as takeScreenshot] (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:67:16)
+    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
+    at ManagedPromise.invokeCallback_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+  </testcase>
+  <testcase classname="EndToEndTest" name="CreateTask" time="0.003">
    <skipped message="Temporarily disabled with xit" />
   </testcase>
-  <testcase classname="EndToEndTest" name="SelectUserGuide" time="4.898" />
-  <testcase classname="EndToEndTest" name="LogoutFromApp" time="3.887" />
+  <testcase classname="EndToEndTest" name="SelectUserGuide" time="0.011">
+   <failure type="exception" message="NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
+    at Object.checkLegacyResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.takeScreenshot()
+    at Driver.schedule (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at Driver.takeScreenshot (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
+    at run (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:59:33)
+    at ProtractorBrowser.to.<computed> [as takeScreenshot] (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:67:16)
+    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
+    at ManagedPromise.invokeCallback_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+  </testcase>
+  <testcase classname="EndToEndTest" name="LogoutFromApp" time="0.009">
+   <failure type="exception" message="NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.92)
+  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
+    at Object.checkLegacyResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.takeScreenshot()
+    at Driver.schedule (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at Driver.takeScreenshot (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
+    at run (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:59:33)
+    at ProtractorBrowser.to.<computed> [as takeScreenshot] (D:\ProtractorV2\AcquireSolution\node_modules\protractor\built\browser.js:67:16)
+    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
+    at ManagedPromise.invokeCallback_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at D:\ProtractorV2\AcquireSolution\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+  </testcase>
  </testsuite>
 </testsuites>
