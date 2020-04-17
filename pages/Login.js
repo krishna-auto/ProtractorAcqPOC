@@ -13,10 +13,10 @@ let loginpage = function(){
         browser.wait(until.presenceOf(userName), 80000, 'Element taking too long to appear in the DOM');
     }
     this.enterUsername  = function(){
-        userName.sendKeys('santosh+admin180919031844@argusexpresstest.com');
+        userName.sendKeys('santosh+admin1220120075024@argusexpresstest.com');
     }
     this.enterPassword = function(){
-        password.sendKeys('Acquire234$');
+        password.sendKeys('Acquire123$');
     }
 
     this.clickLogin = function() {

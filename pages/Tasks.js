@@ -7,11 +7,10 @@ let taskspage = function(){
     let createButton = element(by.xpath("//button/span[contains(text(),'Create')]"));
     
     this.CreateTask = function(task) {
-            helper.clickElement(addTask).then(function(){
+            helper.clickElement(addTask);
             browser.sleep(2000);
             taskInputField.sendKeys(task);
             createButton.click();
-        });
     }
     
 };

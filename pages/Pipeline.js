@@ -14,6 +14,13 @@ let pipelinepage = function(){
     this.EnterDealName  = function(deal){
         DealNameText.sendKeys(deal);
     }
+    this.VerifyDealLabels  = function(){
+        VerifyLabels('DEAL NAME');
+        VerifyLabels('In status');
+        VerifyLabels('Deal Currency');
+        VerifyLabels('Deal Area Unit');
+    }
+    
     this.ValidateUserGuide = function(){
         UserGuide.click().then(function() {
             browser.getAllWindowHandles().then(function(handles) {
@@ -47,6 +54,9 @@ let pipelinepage = function(){
         this.LogoutFromApp = function(){
                 element(by.xpath("//i[contains(@class,'icon-account')]")).click();
                 element(by.xpath("//div[@class='logout-btn']//button")).click();
+        }
+        function VerifyLabels(label){
+            helper.verifyElement(element(by.xpath("//label[contains(text(),'"+label+"')]")),true);
         }
 
 };

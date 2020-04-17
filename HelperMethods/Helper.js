@@ -10,5 +10,9 @@ let helpermethods = function(){
         var actualstatus  = element.isPresent();
         expect(expectedstatus).toBe(actualstatus);
     }
+    this.EnterValue = function(element,value){
+        element.sendKeys(value);
+    }
+    
 };
 module.exports = new helpermethods();
