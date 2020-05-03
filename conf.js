@@ -75,8 +75,8 @@ fs.emptyDir('screenshots/', function (err) {
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
   // 'browserName': 'firefox' 
-  'browserName': 'chrome',
-  
+  'browserName': 'firefox',
+  //chromeOptions: {args: ['--headless', "--window-size=1920,1080"]},
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine',
 

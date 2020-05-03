@@ -29,8 +29,19 @@ describe('EndToEndTest',function(){
         dealspage.uploadFileAssetImage();
         
     });
+    it('SelectValueFromDropdown',function(){
+        strategypage.navigateToTab('Strategy');
+        strategypage.selectValuefromOrgDropDown('Your Organization');
+    });
+    it('CreateTask',function(){
+        taskpage.navigateToTab('Tasks');
+        taskpage.CreateTask();
+    });
+    it('SelectUserGuide',function(){
+       pipelinepage.ValidateUserGuide();
+    });
     it('NavigatetoModels',function(){
-        dealspage.navigateToTab('Models');
+        modelpage.navigateToTab('Models');
     })
     it('AddModelAndVerifyPopup',function(){
         modelpage.clickAddModelButton();
@@ -46,28 +57,12 @@ describe('EndToEndTest',function(){
     })
     it('CloseModelVerifyModelCard',function(){
         modelpage.clickCloseIcon();
-        modelpage.VerifyModelCardDetails('Model1','Model Decription Model Decription Model Decription Model Decription');
+        //modelpage.VerifyModelCardDetails('Model1','Model Decription Model Decription Model Decription Model Decription');  
     })
-    it('uploadavux',function(){
-        
-    })
-    
-    it('SelectValueFromDropdown',function(){
-        dealspage.navigateToTab('Strategy');
-        strategypage.selectValuefromOrgDropDown('Your Organization');
-    });
-    it('CreateTask',function(){
-        dealspage.navigateToTab('Tasks');
-        taskpage.CreateTask();
-    });
-    it('SelectUserGuide',function(){
-       pipelinepage.ValidateUserGuide();
-    });
     it('DiscardDeal',function(){
         dealspage.ClickEditDealIcon();
         dealspage.clickButton('Discard Deal');
-        browser.sleep(1000);
-        dealspage.clickButton('Discard Deal');
+        dealspage.clickDiscardDealPopOverButton();
     })
     it('LogoutFromApp',function(){
         pipelinepage.LogoutFromApp();

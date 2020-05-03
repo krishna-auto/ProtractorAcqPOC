@@ -74,8 +74,8 @@ fs.emptyDir('screenshots/', function (err) {
     },
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
-  // 'browserName': 'firefox' 
-  'browserName': 'safari',
+  'browserName': 'chrome', 
+  //'browserName': 'safari',
   
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine',

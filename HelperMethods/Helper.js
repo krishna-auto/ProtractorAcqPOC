@@ -10,8 +10,16 @@ let helpermethods = function(){
         var actualstatus  = element.isPresent();
         expect(expectedstatus).toBe(actualstatus);
     }
+    this.verifyElementafterAction  = function(element,expectedstatus){
+        browser.wait(until.visibilityOf(element,5000)).then(function(){
+        var actualstatus  = element.isPresent();
+        expect(expectedstatus).toBe(actualstatus);
+    })
+    }
     this.EnterValue = function(element,value){
+        browser.wait(until.visibilityOf(element,5000)).then(function(){
         element.sendKeys(value);
+        });
     }
     
 };

@@ -7,14 +7,8 @@ let dealpage = function(){
     let CreateButton = element(by.xpath("//button//span[contains(text(),'Save')]"));
     let inputfileType = element(by.xpath('//input[@type="file"]'));
     let editDealIcon = element(by.xpath('//i[contains(@class,"icon-edit")]'));
+    let discardDealPopoverButton = element(by.xpath("//app-warning//span[contains(text(),'Discard Deal')]"));
     
-    this.navigateToTab = function(tab) {
-        element(by.xpath("//a[contains(text(),'"+tab+"')]")).click();
-        if(tab.localeCompare('Models'))
-            browser.wait(until.presenceOf(element(by.xpath("//div[contains(text(),'Add Model')]"))), 5000, 'Element taking too long to appear in the DOM');
-        else if(tab.localeCompare('Strategy'))
-            browser.wait(until.presenceOf(element(by.xpath("//label[text()='CLIENT']"))), 5000, 'Element taking too long to appear in the DOM');
-    }
     this.uploadFileAssetImage = function(){
             browser.sleep(4000);
             var path = require('path');
@@ -23,6 +17,8 @@ let dealpage = function(){
             AssetImage.click();
             inputfileType.sendKeys(absolutePath);
             CreateButton.click();
+            //browser.wait(until.invisibilityOf(element(by.xpath("//div/mat-spinner"))), 10000, 'Element taking too long to appear in the DOM');
+            browser.wait(until.presenceOf(element(by.xpath("//label[contains(text(),'ASSET IMAGE')]//ancestor::figure//button"))), 15000, 'Upload Image button is taking too long to appear in the DOM');
         }
     this.ClickEditDealIcon = function(){
         helper.clickElement(editDealIcon);
@@ -30,6 +26,10 @@ let dealpage = function(){
     this.clickButton = function(buttonName){
         helper.clickElement(element(by.xpath("//button/span[contains(text(),'"+buttonName+"')]")));
     }
+    this.clickDiscardDealPopOverButton = function(){
+        helper.clickElement(discardDealPopoverButton);
+    }
+
     
 };
 module.exports = new dealpage();
