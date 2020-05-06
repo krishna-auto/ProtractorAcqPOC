@@ -1,19 +1,19 @@
-var HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
+/*var HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
 
 var reporter = new HtmlScreenshotReporter({
   dest: 'target/screenshots',
   filename: 'my-report.html'
 });
-
+*/
 
 // An example configuration file.
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
 
-  onPrepare: function(){
-    browser.manage().timeouts().implicitlyWait(10000);
+  //onPrepare: function(){
+    //browser.manage().timeouts().implicitlyWait(10000);
 
-    var jasmineReporters = require('jasmine-reporters');
+  /*  var jasmineReporters = require('jasmine-reporters');
     jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
       consolidateAll: true,
       savePath: './',
@@ -71,7 +71,7 @@ fs.emptyDir('screenshots/', function (err) {
         };
         new HTMLReport().from('xmlresults.xml', testConfig);
       });
-    },
+    },*/
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
   'browserName': 'chrome', 

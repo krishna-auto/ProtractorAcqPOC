@@ -22,7 +22,8 @@ let loginpage = function(){
     this.clickLogin = function() {
         //browser.sleep(9000);
       //  loginButton.click();
-        helper.clickElement(loginButton);
+        //helper.clickElement(loginButton);
+        helper.clickElement(element(by.css("input[id='sfid-submit']")));
         browser.wait(until.visibilityOf(element(by.xpath("//button/span[contains(text(),'Add Deal')]"))), 180000, 'Element taking too long to appear in the DOM');
         
     }
