@@ -74,15 +74,15 @@ fs.emptyDir('screenshots/', function (err) {
     },*/
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
-  'browserName': 'chrome', 
-  //'browserName': 'safari',
+  //'browserName': 'chrome', 
+  'browserName': 'safari',
   
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine',
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: ['SafariEndToEnd.js'],
+  specs: ['EndToEndTestspec.js'],
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
