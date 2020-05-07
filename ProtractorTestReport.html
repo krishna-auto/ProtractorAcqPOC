@@ -189,10 +189,10 @@ th {
         <div class="navbar-header">
           <div class="project-name visible-md visible-lg">Protractor Test Execution Report</div>
           <div class="label-container">
-            <span class="label label-success" title=TestCases>Passed: 6</span>
-            <span class="label label-danger" title=TestCases>Failed: 9</span> 
+            <span class="label label-success" title=TestCases>Passed: 12</span>
+            <span class="label label-danger" title=TestCases>Failed: 3</span> 
 			
-            <span class="label label-info">Time Elapsed: 0h 1min 38s</span>
+            <span class="label label-info">Time Elapsed: 0h 1min 35s</span>
           </div>
         </div>
       </div>
@@ -200,11 +200,11 @@ th {
 
     <div class="container">
 	
-    <div class="generated-on">5/6/2020, 5:49:27 PM</div>
+    <div class="generated-on">5/7/2020, 8:41:49 AM</div>
 	
-    <!--<div class="generated-on"><b>Platform:</b> Windows</div>
-    <div class="info"><b>Browser:</b> chrome 81.0.4044.129</div>
-    <div class="info"><b>Generated on:</b> 5/6/2020, 5:49:27 PM</div>-->
+    <!--<div class="generated-on"><b>Platform:</b> unknown</div>
+    <div class="info"><b>Browser:</b> firefox unknownBrowser</div>
+    <div class="info"><b>Generated on:</b> 5/7/2020, 8:41:49 AM</div>-->
 
 
       <div class="row">
@@ -227,10 +227,10 @@ th {
             <div class="row">
               <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <div class="pull-left">
-                    <strong> Browser: </strong>chrome 81.0.4044.129
+                    <strong> Browser: </strong>firefox unknownBrowser
                   </div>
                   <div class="pull-right">
-                    <strong> Platform: </strong>Windows
+                    <strong> Platform: </strong>unknown
                   </div>
               </div>
             </div>
@@ -251,8 +251,8 @@ th {
           <font color="red"><b>TestSuite:</b>EndToEndTest</font>
           
           <span class="label-container">
-            <span class="label label-success">6</span>
-            <span class="label label-danger">9</span>
+            <span class="label label-success">12</span>
+            <span class="label label-danger">3</span>
             
             
           </span>
@@ -286,7 +286,7 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 18 seconds</font>
+                          <font color="black">Time elapsed: 15 seconds</font>
 
                           
 
@@ -322,7 +322,7 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 36 seconds</font>
+                          <font color="black">Time elapsed: 39 seconds</font>
 
                           
 
@@ -411,16 +411,16 @@ th {
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_4">
                         
-                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
                         
 
-                        <font color="green"><b>TestCase:</b>UploadImage</font>
                         
                         
+                        <font color="red"><b>TestCase:</b>UploadImage</font>
                         <span class="label-container">
-                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
+                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -430,11 +430,23 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 8 seconds</font>
+                          <font color="black">Time elapsed: 25 seconds</font>
 
+                          
+                            <br />
+                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                            <font color="red">Failed: Upload Image button is taking too long to appear in the DOM
+Wait timed out after 20046ms</font>
                           
 
                           
+                            <br />
+                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
+                              Screenshot on failure:
+                            <a class="screenshot" href="./screenshots/firefox-EndToEndTest UploadImage.png" data-lightbox="firefox-EndToEndTest UploadImage.png">
+                              <img src="./screenshots/firefox-EndToEndTest UploadImage.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/firefox-EndToEndTest UploadImage.png"/>
+                            </a>
+                        
                       
                       </p>
                     </div>
@@ -502,23 +514,20 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 2 seconds</font>
+                          <font color="black">Time elapsed: 1 seconds</font>
 
                           
                             <br />
                             <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
-                            <font color="red">Failed: invalid selector: Unable to locate an element with the xpath expression element(by.xpath('//label[contains(text(),'Title')]/parent::div//input')) because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.xpath('//label[contains(text(),'Title')]/parent::div//input'))' is not a valid XPath expression.
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
+                            <font color="red">Failed: Given xpath expression "element(by.xpath('//label[contains(text(),'Title')]/parent::div//input'))" is invalid: SyntaxError: The expression is not a legal expression.</font>
                           
 
                           
                             <br />
                             <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
                               Screenshot on failure:
-                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest CreateTask.png" data-lightbox="chrome-EndToEndTest CreateTask.png">
-                              <img src="./screenshots/chrome-EndToEndTest CreateTask.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest CreateTask.png"/>
+                            <a class="screenshot" href="./screenshots/firefox-EndToEndTest CreateTask.png" data-lightbox="firefox-EndToEndTest CreateTask.png">
+                              <img src="./screenshots/firefox-EndToEndTest CreateTask.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/firefox-EndToEndTest CreateTask.png"/>
                             </a>
                         
                       
@@ -552,22 +561,20 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 5 seconds</font>
+                          <font color="black">Time elapsed: 1 seconds</font>
 
                           
                             <br />
                             <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
-                            <font color="red">Failed: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
+                            <font color="red">Expected 'about:blank' to contain 'help'.</font>
                           
 
                           
                             <br />
                             <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
                               Screenshot on failure:
-                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest SelectUserGuide.png" data-lightbox="chrome-EndToEndTest SelectUserGuide.png">
-                              <img src="./screenshots/chrome-EndToEndTest SelectUserGuide.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest SelectUserGuide.png"/>
+                            <a class="screenshot" href="./screenshots/firefox-EndToEndTest SelectUserGuide.png" data-lightbox="firefox-EndToEndTest SelectUserGuide.png">
+                              <img src="./screenshots/firefox-EndToEndTest SelectUserGuide.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/firefox-EndToEndTest SelectUserGuide.png"/>
                             </a>
                         
                       
@@ -582,16 +589,16 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_8">
                         
-                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
                         
 
+                        <font color="green"><b>TestCase:</b>NavigatetoModels</font>
                         
                         
-                        <font color="red"><b>TestCase:</b>NavigatetoModels</font>
                         <span class="label-container">
+                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
-                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -601,24 +608,11 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 5 seconds</font>
+                          <font color="black">Time elapsed: 4 seconds</font>
 
-                          
-                            <br />
-                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
-                            <font color="red">WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
-                            <br />
-                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
-                              Screenshot on failure:
-                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest NavigatetoModels.png" data-lightbox="chrome-EndToEndTest NavigatetoModels.png">
-                              <img src="./screenshots/chrome-EndToEndTest NavigatetoModels.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest NavigatetoModels.png"/>
-                            </a>
-                        
                       
                       </p>
                     </div>
@@ -631,16 +625,16 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_9">
                         
-                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
                         
 
+                        <font color="green"><b>TestCase:</b>AddModelAndVerifyPopup</font>
                         
                         
-                        <font color="red"><b>TestCase:</b>AddModelAndVerifyPopup</font>
                         <span class="label-container">
+                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
-                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -650,24 +644,11 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 5 seconds</font>
+                          <font color="black">Time elapsed: 1 seconds</font>
 
-                          
-                            <br />
-                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
-                            <font color="red">WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
-                            <br />
-                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
-                              Screenshot on failure:
-                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest AddModelAndVerifyPopup.png" data-lightbox="chrome-EndToEndTest AddModelAndVerifyPopup.png">
-                              <img src="./screenshots/chrome-EndToEndTest AddModelAndVerifyPopup.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest AddModelAndVerifyPopup.png"/>
-                            </a>
-                        
                       
                       </p>
                     </div>
@@ -680,16 +661,16 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_10">
                         
-                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
                         
 
+                        <font color="green"><b>TestCase:</b>CreateModelDetails</font>
                         
                         
-                        <font color="red"><b>TestCase:</b>CreateModelDetails</font>
                         <span class="label-container">
+                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
-                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -699,24 +680,11 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 5 seconds</font>
+                          <font color="black">Time elapsed: 3 seconds</font>
 
-                          
-                            <br />
-                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
-                            <font color="red">WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
-                            <br />
-                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
-                              Screenshot on failure:
-                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest CreateModelDetails.png" data-lightbox="chrome-EndToEndTest CreateModelDetails.png">
-                              <img src="./screenshots/chrome-EndToEndTest CreateModelDetails.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest CreateModelDetails.png"/>
-                            </a>
-                        
                       
                       </p>
                     </div>
@@ -729,16 +697,16 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_11">
                         
-                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
                         
 
+                        <font color="green"><b>TestCase:</b>EditModelCardUploadAVUX</font>
                         
                         
-                        <font color="red"><b>TestCase:</b>EditModelCardUploadAVUX</font>
                         <span class="label-container">
+                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
-                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -748,24 +716,11 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 5 seconds</font>
+                          <font color="black">Time elapsed: 1 seconds</font>
 
-                          
-                            <br />
-                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
-                            <font color="red">WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
-                            <br />
-                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
-                              Screenshot on failure:
-                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest EditModelCardUploadAVUX.png" data-lightbox="chrome-EndToEndTest EditModelCardUploadAVUX.png">
-                              <img src="./screenshots/chrome-EndToEndTest EditModelCardUploadAVUX.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest EditModelCardUploadAVUX.png"/>
-                            </a>
-                        
                       
                       </p>
                     </div>
@@ -778,16 +733,16 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_12">
                         
-                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
                         
 
+                        <font color="green"><b>TestCase:</b>CloseModelVerifyModelCard</font>
                         
                         
-                        <font color="red"><b>TestCase:</b>CloseModelVerifyModelCard</font>
                         <span class="label-container">
+                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
-                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -797,24 +752,11 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 5 seconds</font>
+                          <font color="black">Time elapsed: 2 seconds</font>
 
-                          
-                            <br />
-                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
-                            <font color="red">WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
-                            <br />
-                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
-                              Screenshot on failure:
-                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest CloseModelVerifyModelCard.png" data-lightbox="chrome-EndToEndTest CloseModelVerifyModelCard.png">
-                              <img src="./screenshots/chrome-EndToEndTest CloseModelVerifyModelCard.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest CloseModelVerifyModelCard.png"/>
-                            </a>
-                        
                       
                       </p>
                     </div>
@@ -827,16 +769,16 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_13">
                         
-                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
                         
 
+                        <font color="green"><b>TestCase:</b>DiscardDeal</font>
                         
                         
-                        <font color="red"><b>TestCase:</b>DiscardDeal</font>
                         <span class="label-container">
+                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
-                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -846,24 +788,11 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 5 seconds</font>
+                          <font color="black">Time elapsed: 2 seconds</font>
 
-                          
-                            <br />
-                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
-                            <font color="red">WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
-                            <br />
-                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
-                              Screenshot on failure:
-                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest DiscardDeal.png" data-lightbox="chrome-EndToEndTest DiscardDeal.png">
-                              <img src="./screenshots/chrome-EndToEndTest DiscardDeal.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest DiscardDeal.png"/>
-                            </a>
-                        
                       
                       </p>
                     </div>
@@ -876,16 +805,16 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_14">
                         
-                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
                         
 
+                        <font color="green"><b>TestCase:</b>LogoutFromApp</font>
                         
                         
-                        <font color="red"><b>TestCase:</b>LogoutFromApp</font>
                         <span class="label-container">
+                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
-                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -895,24 +824,11 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 5 seconds</font>
+                          <font color="black">Time elapsed: 4 seconds</font>
 
-                          
-                            <br />
-                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
-                            <font color="red">WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)</font>
                           
 
                           
-                            <br />
-                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
-                              Screenshot on failure:
-                            <a class="screenshot" href="./screenshots/chrome-EndToEndTest LogoutFromApp.png" data-lightbox="chrome-EndToEndTest LogoutFromApp.png">
-                              <img src="./screenshots/chrome-EndToEndTest LogoutFromApp.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-EndToEndTest LogoutFromApp.png"/>
-                            </a>
-                        
                       
                       </p>
                     </div>
@@ -960,10 +876,10 @@ SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.
       });
       google.charts.setOnLoadCallback(function() {drawChart({
                                                               "title": "TestCases",
-                                                              "passed": 6,
+                                                              "passed": 12,
                                                               "skipped": 0,
                                                               "errors": 0,
-                                                              "failed": 9
+                                                              "failed": 3
         })
       });
 

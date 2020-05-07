@@ -15,7 +15,8 @@ describe('EndToEndTest',function(){
         loginpage.clickLogin();
     },300000)
     
-    it('VerifyAddDealButton',function(){
+    it('VerifyAddDealButton',async function(){
+        
         pipelinepage.verifyButton('AddDeal');
     });
     it('AddDeal',function(){

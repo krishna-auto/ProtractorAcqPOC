@@ -1,22 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="9" tests="15" time="97.15">
- <testsuite name="EndToEndTest" timestamp="2020-05-06T17:47:49" hostname="localhost" time="97.15" errors="0" tests="15" skipped="0" disabled="0" failures="9">
-  <testcase classname="EndToEndTest" name="LaunchBrowser" time="17.432" />
-  <testcase classname="EndToEndTest" name="EnterCredentials" time="35.406" />
-  <testcase classname="EndToEndTest" name="VerifyAddDealButton" time="0.052" />
-  <testcase classname="EndToEndTest" name="AddDeal" time="1.451" />
-  <testcase classname="EndToEndTest" name="UploadImage" time="7.347" />
-  <testcase classname="EndToEndTest" name="SelectValueFromDropdown" time="1.265" />
-  <testcase classname="EndToEndTest" name="CreateTask" time="1.043">
-   <failure type="exception" message="Failed: invalid selector: Unable to locate an element with the xpath expression element(by.xpath(&apos;//label[contains(text(),&apos;Title&apos;)]/parent::div//input&apos;)) because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;element(by.xpath(&apos;//label[contains(text(),&apos;Title&apos;)]/parent::div//input&apos;))&apos; is not a valid XPath expression.
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[InvalidSelectorError: invalid selector: Unable to locate an element with the xpath expression element(by.xpath('//label[contains(text(),'Title')]/parent::div//input')) because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'element(by.xpath('//label[contains(text(),'Title')]/parent::div//input'))' is not a valid XPath expression.
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
-    at Object.checkLegacyResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
-    at parseHttpResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
+<testsuites disabled="0" errors="0" failures="3" tests="15" time="94.717">
+ <testsuite name="EndToEndTest" timestamp="2020-05-07T08:40:14" hostname="localhost" time="94.717" errors="0" tests="15" skipped="0" disabled="0" failures="3">
+  <testcase classname="EndToEndTest" name="LaunchBrowser" time="14.392" />
+  <testcase classname="EndToEndTest" name="EnterCredentials" time="38.622" />
+  <testcase classname="EndToEndTest" name="VerifyAddDealButton" time="0.036" />
+  <testcase classname="EndToEndTest" name="AddDeal" time="1.858" />
+  <testcase classname="EndToEndTest" name="UploadImage" time="24.672">
+   <failure type="exception" message="Failed: Upload Image button is taking too long to appear in the DOM
+Wait timed out after 20046ms"><![CDATA[TimeoutError: Upload Image button is taking too long to appear in the DOM
+Wait timed out after 20046ms
+    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at ManagedPromise.invokeCallback_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: Upload Image button is taking too long to appear in the DOM
+    at scheduleWait (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2188:20)
+    at ControlFlow.wait (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2517:12)
+    at Driver.wait (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:934:29)
+    at run (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:59:33)
+    at ProtractorBrowser.to.<computed> [as wait] (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:67:16)
+    at dealpage.uploadFileAssetImage (D:\ProtractorV2\AcquireSolution\pages\Deals.js:21:21)
+    at UserContext.<anonymous> (D:\ProtractorV2\AcquireSolution\EndToEndTestspec.js:30:19)
+    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+From: Task: Run it("UploadImage") in control flow
+    at UserContext.<anonymous> (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:\ProtractorV2\AcquireSolution\EndToEndTestspec.js:29:5)
+    at addSpecsToSuite (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:\ProtractorV2\AcquireSolution\EndToEndTestspec.js:2:1)
+    at Module._compile (internal/modules/cjs/loader.js:1157:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)
+    at Module.load (internal/modules/cjs/loader.js:1001:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:900:14)]]>
+   </failure>
+  </testcase>
+  <testcase classname="EndToEndTest" name="SelectValueFromDropdown" time="1.47" />
+  <testcase classname="EndToEndTest" name="CreateTask" time="0.996">
+   <failure type="exception" message="Failed: Given xpath expression &quot;element(by.xpath(&apos;//label[contains(text(),&apos;Title&apos;)]/parent::div//input&apos;))&quot; is invalid: SyntaxError: The expression is not a legal expression."><![CDATA[InvalidSelectorError: Given xpath expression "element(by.xpath('//label[contains(text(),'Title')]/parent::div//input'))" is invalid: SyntaxError: The expression is not a legal expression.
+    at Object.throwDecodedError (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:514:15)
+    at parseHttpResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:519:13)
     at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.findElements(By(xpath, element(by.xpath('//label[contains(text(),'Title')]/parent::div//input'))))
@@ -48,7 +87,7 @@ From: Task: <anonymous wait>
     at ProtractorBrowser.to.<computed> [as wait] (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:67:16)
     at helpermethods.EnterValue (D:\ProtractorV2\AcquireSolution\HelperMethods\Helper.js:20:17)
     at taskspage.CreateTask (D:\ProtractorV2\AcquireSolution\pages\Tasks.js:14:20)
-    at UserContext.<anonymous> (D:\ProtractorV2\AcquireSolution\EndToEndTestspec.js:38:18)
+    at UserContext.<anonymous> (D:\ProtractorV2\AcquireSolution\EndToEndTestspec.js:39:18)
     at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
     at new ManagedPromise (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
 From: Task: Run it("CreateTask") in control flow
@@ -64,7 +103,7 @@ From: Task: Run it("CreateTask") in control flow
     at runNext (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
 From asynchronous test: 
 Error
-    at Suite.<anonymous> (D:\ProtractorV2\AcquireSolution\EndToEndTestspec.js:36:5)
+    at Suite.<anonymous> (D:\ProtractorV2\AcquireSolution\EndToEndTestspec.js:37:5)
     at addSpecsToSuite (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
     at Env.describe (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
     at describe (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
@@ -75,210 +114,23 @@ Error
     at Function.Module._load (internal/modules/cjs/loader.js:900:14)]]>
    </failure>
   </testcase>
-  <testcase classname="EndToEndTest" name="SelectUserGuide" time="4.944">
-   <failure type="exception" message="Failed: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
-    at Object.checkLegacyResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
-    at parseHttpResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-From: Task: WebDriver.getCurrentUrl()
-    at Driver.schedule (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at Driver.getCurrentUrl (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:993:17)
-    at D:\ProtractorV2\AcquireSolution\pages\Pipeline.js:29:43
+  <testcase classname="EndToEndTest" name="SelectUserGuide" time="0.431">
+   <failure type="toContain" message="Expected &apos;about:blank&apos; to contain &apos;help&apos;."><![CDATA[Error: Failed expectation
+    at D:\ProtractorV2\AcquireSolution\pages\Pipeline.js:29:60
     at ManagedPromise.invokeCallback_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
     at TaskQueue.execute_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
     at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
     at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-From: Task: Run it("SelectUserGuide") in control flow
-    at UserContext.<anonymous> (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
-    at attempt (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
-    at QueueRunner.run (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
-    at QueueRunner.execute (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
-    at Spec.queueRunnerFactory (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
-    at Spec.execute (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
-    at UserContext.fn (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
-    at attempt (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
-    at QueueRunner.run (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
-    at runNext (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
-From asynchronous test: 
-Error
-    at Suite.<anonymous> (D:\ProtractorV2\AcquireSolution\EndToEndTestspec.js:40:5)
-    at addSpecsToSuite (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
-    at Env.describe (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
-    at describe (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
-    at Object.<anonymous> (D:\ProtractorV2\AcquireSolution\EndToEndTestspec.js:2:1)
-    at Module._compile (internal/modules/cjs/loader.js:1157:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)
-    at Module.load (internal/modules/cjs/loader.js:1001:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:900:14)]]>
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]>
    </failure>
   </testcase>
-  <testcase classname="EndToEndTest" name="NavigatetoModels" time="4.023">
-   <failure type="exception" message="WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
-    at Object.checkLegacyResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
-    at parseHttpResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-From: Task: WebDriver.takeScreenshot()
-    at Driver.schedule (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at Driver.takeScreenshot (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
-    at run (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:59:33)
-    at ProtractorBrowser.to.<computed> [as takeScreenshot] (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:67:16)
-    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
-    at ManagedPromise.invokeCallback_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
-    at TaskQueue.execute_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
-    at TaskQueue.executeNext_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
-   </failure>
-  </testcase>
-  <testcase classname="EndToEndTest" name="AddModelAndVerifyPopup" time="4.028">
-   <failure type="exception" message="WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
-    at Object.checkLegacyResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
-    at parseHttpResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-From: Task: WebDriver.takeScreenshot()
-    at Driver.schedule (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at Driver.takeScreenshot (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
-    at run (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:59:33)
-    at ProtractorBrowser.to.<computed> [as takeScreenshot] (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:67:16)
-    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
-    at ManagedPromise.invokeCallback_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
-    at TaskQueue.execute_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
-    at TaskQueue.executeNext_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
-   </failure>
-  </testcase>
-  <testcase classname="EndToEndTest" name="CreateModelDetails" time="4.036">
-   <failure type="exception" message="WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
-    at Object.checkLegacyResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
-    at parseHttpResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-From: Task: WebDriver.takeScreenshot()
-    at Driver.schedule (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at Driver.takeScreenshot (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
-    at run (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:59:33)
-    at ProtractorBrowser.to.<computed> [as takeScreenshot] (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:67:16)
-    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
-    at ManagedPromise.invokeCallback_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
-    at TaskQueue.execute_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
-    at TaskQueue.executeNext_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
-   </failure>
-  </testcase>
-  <testcase classname="EndToEndTest" name="EditModelCardUploadAVUX" time="4.029">
-   <failure type="exception" message="WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
-    at Object.checkLegacyResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
-    at parseHttpResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-From: Task: WebDriver.takeScreenshot()
-    at Driver.schedule (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at Driver.takeScreenshot (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
-    at run (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:59:33)
-    at ProtractorBrowser.to.<computed> [as takeScreenshot] (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:67:16)
-    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
-    at ManagedPromise.invokeCallback_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
-    at TaskQueue.execute_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
-    at TaskQueue.executeNext_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
-   </failure>
-  </testcase>
-  <testcase classname="EndToEndTest" name="CloseModelVerifyModelCard" time="4.035">
-   <failure type="exception" message="WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
-    at Object.checkLegacyResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
-    at parseHttpResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-From: Task: WebDriver.takeScreenshot()
-    at Driver.schedule (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at Driver.takeScreenshot (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
-    at run (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:59:33)
-    at ProtractorBrowser.to.<computed> [as takeScreenshot] (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:67:16)
-    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
-    at ManagedPromise.invokeCallback_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
-    at TaskQueue.execute_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
-    at TaskQueue.executeNext_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
-   </failure>
-  </testcase>
-  <testcase classname="EndToEndTest" name="DiscardDeal" time="4.027">
-   <failure type="exception" message="WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
-    at Object.checkLegacyResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
-    at parseHttpResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-From: Task: WebDriver.takeScreenshot()
-    at Driver.schedule (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at Driver.takeScreenshot (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
-    at run (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:59:33)
-    at ProtractorBrowser.to.<computed> [as takeScreenshot] (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:67:16)
-    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
-    at ManagedPromise.invokeCallback_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
-    at TaskQueue.execute_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
-    at TaskQueue.executeNext_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
-   </failure>
-  </testcase>
-  <testcase classname="EndToEndTest" name="LogoutFromApp" time="4.022">
-   <failure type="exception" message="WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)"><![CDATA[WebDriverError: chrome not reachable
-  (Session info: chrome=81.0.4044.129)
-  (Driver info: chromedriver=81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}),platform=Windows NT 10.0.17763 x86_64)
-    at Object.checkLegacyResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
-    at parseHttpResponse (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-From: Task: WebDriver.takeScreenshot()
-    at Driver.schedule (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at Driver.takeScreenshot (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
-    at run (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:59:33)
-    at ProtractorBrowser.to.<computed> [as takeScreenshot] (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\built\browser.js:67:16)
-    at D:\ProtractorV2\AcquireSolution\conf.js:34:29
-    at ManagedPromise.invokeCallback_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
-    at TaskQueue.execute_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
-    at TaskQueue.executeNext_ (C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\krishna.angara\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
-   </failure>
-  </testcase>
+  <testcase classname="EndToEndTest" name="NavigatetoModels" time="3.155" />
+  <testcase classname="EndToEndTest" name="AddModelAndVerifyPopup" time="0.444" />
+  <testcase classname="EndToEndTest" name="CreateModelDetails" time="2.808" />
+  <testcase classname="EndToEndTest" name="EditModelCardUploadAVUX" time="0.001" />
+  <testcase classname="EndToEndTest" name="CloseModelVerifyModelCard" time="1.062" />
+  <testcase classname="EndToEndTest" name="DiscardDeal" time="1.187" />
+  <testcase classname="EndToEndTest" name="LogoutFromApp" time="3.578" />
  </testsuite>
 </testsuites>
